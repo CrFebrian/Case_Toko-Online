@@ -2,7 +2,6 @@
 use PHPUnit\Framework\TestCase;
 use App\Catalog;
 
-// Pastikan file Catalog dipanggil agar kelasnya dikenali
 require_once __DIR__ . '/../src/Catalog.php';
 
 class CatalogTest extends TestCase{
@@ -17,10 +16,8 @@ class CatalogTest extends TestCase{
 
     public function testSearchProductFound(){
         $result = $this->katalog->searchProduct("Kemeja");
-        $this->assertCount(99, $result);
+        $this->assertCount(1, $result);
     }
 
-    protected function tearDown(): void{ 
-        if(file_exists($this->testFile)) unlink($this->testFile); 
-    }
+    protected function tearDown(): void{ unlink($this->testFile); }
 }
