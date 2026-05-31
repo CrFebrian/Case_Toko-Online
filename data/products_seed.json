@@ -1,0 +1,22 @@
+{
+    "PRD-001": {
+        "nama": "Kemeja Flanel",
+        "harga": 150000,
+        "stok": 3
+    },
+    "PRD-002": {
+        "nama": "Celana Jeans",
+        "harga": 250000,
+        "stok": 5
+    },
+    "PRD-020": {
+        "nama": "Baju Skena Premium",
+        "harga": 150000,
+        "stok": 8
+    },
+    "PRD-022": {
+        "nama": "Hoodie",
+        "harga": -80000,
+        "stok": -14
+    }
+}
